@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Angular 2 Http Demo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <base href="/">
+        <style type="text/css">
+            <!--
+            @import url( '/libs/css/animate.css');
+            @import url( '/libs/css/bootstrap.min.css');
+            @import url( '/libs/css/font-awesome.min.css');
+            @import url( '/libs/css/style.css');
+
+            /*这里是通过@import引用CSS的样式内容*/
+            -->
+        </style>
+        <script src="/libs/js/shim.min.js"></script>
+        <script src="/libs/js/zone.js"></script>
+        <script src="/libs/js/Reflect.js"></script>
+        <script src="/libs/js/system.src.js"></script>
+        <script src="/libs/js/moment.min.js"></script>
+        <script src="/web.config.js"></script>
+
+        <script>
+            System.import ('app/app').then(null, console.error.bind(console));
+        </script>
+
+    </head>
+    <body class="md-skin gray-bg graph-bg" id="page-top">
+        <app></app>
+    </body>
+</html>
