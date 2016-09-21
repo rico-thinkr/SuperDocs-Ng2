@@ -3,7 +3,9 @@
 import { Http, Headers, Response, RequestOptions} from '@angular/http';
 import { Observable }     from 'rxjs/Observable';
 import './rxjs-extensions';
-
+export {Response} from '@angular/http';
+import { Injectable } from '@angular/core';
+@Injectable()
 export class Http_Service {
 
     /**
@@ -20,9 +22,9 @@ export class Http_Service {
      * @param  {api}    string [where the request to]
      */
     getData<T>(api: string): Observable<T> {
-        return this.http.get(api)
-            .map(this.extractData)
-            .catch(this.handleError);
+        var r = this.http.get(api);
+        var t = r.map((rr:Response)=>rr.json() as T);
+        return t;
     }
 
 

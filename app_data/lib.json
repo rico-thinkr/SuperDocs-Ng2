@@ -1,0 +1,19 @@
+[
+    {
+        "id":"1",
+        "name":"name_1",
+        "status":"active",
+        "creator":"demo_1",
+        "createTime":"2016-09-21",
+        "lastUpdate":"2016-09-21",
+        "description":"none...",
+        "fileCount":"1",
+        "logs":[{
+            "ID":"l1",
+            "TimeString":"2016-09-21 14:52",
+            "Duration":"123",
+            "Operation":"create",
+            "Message":"demo_1 created lib"
+        }]
+    }
+]

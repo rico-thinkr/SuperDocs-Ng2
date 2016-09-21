@@ -617,6 +617,8 @@ ul.clear-list:first-child {
   border: none;
 }
 a.navbar-brand{
+    font-family: 'Futura';
+    
     color: #fff;
     height:40px;
     padding: 10px 15px;
@@ -718,6 +720,7 @@ a.navbar-brand{
     position: fixed;
     width: 100%;
     z-index: 1000;
+    left: 15px
 }
 
 /*

@@ -6,7 +6,7 @@ import {NgComponent,NgInput,OnInitComponent} from '../utils/component.providers'
         <div class="col-lg-12">
             <ol class="breadcrumb pull-left">
                 <li>
-                    <a href="/">Home</a>
+                    <a routerLink="/">Home</a>
                 </li>
                 <li class="active">
                     <strong>{{title}}</strong>
@@ -19,6 +19,10 @@ import {NgComponent,NgInput,OnInitComponent} from '../utils/component.providers'
 export class breadcrumb_Component implements OnInitComponent{
     @NgInput()
     title:string;
+
+    constructor(){
+
+    }
 
     ngOnInit(){
         console.log(this.title);
